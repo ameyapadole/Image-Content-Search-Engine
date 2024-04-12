@@ -1,0 +1,7 @@
+<mat-nav-list>
+  <ng-container *ngFor="let option of options">
+    <a #option mat-list-item (click)="sendMessage(option)">
+      <span mat-line>{{option}}</span>
+    </a>
+  </ng-container>
+</mat-nav-list>
